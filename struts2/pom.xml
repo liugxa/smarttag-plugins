@@ -2,16 +2,13 @@
 
 <project>
 	<modelVersion>4.0.0</modelVersion>
-	<parent>
-		<groupId>com.platform.gui.framework.smart</groupId>
-		<artifactId>smarttag-framework</artifactId>
-		<version>1.1-SNAPSHOT</version>		
-	</parent>
-
+	
+	<groupId>com.platform.gui.framework.smart</groupId>
 	<artifactId>smarttag-struts2</artifactId>
+	<version>1.1-SNAPSHOT</version>
 	<packaging>jar</packaging>
+	
 	<name>SmartTag Strut(1/2) Jar</name>
-
     <build>
     	<finalName>smarttag-struts2-${smarttag.jar.version}</finalName>
     	<plugins>
@@ -46,7 +43,21 @@
 	</reporting>
 	
 	<dependencies>
-	
+		<!-- Servlet & Jsp -->
+		<dependency>
+			<groupId>javax.servlet</groupId>
+			<artifactId>servlet-api</artifactId>
+			<version>2.4</version>
+			<scope>provided</scope>
+		</dependency>
+		
+		<dependency>
+			<groupId>javax.servlet</groupId>
+			<artifactId>jsp-api</artifactId>
+			<version>2.0</version>
+			<scope>provided</scope>
+		</dependency>
+		
 		<!-- smart-tag -->
 		<dependency>
 			<groupId>com.platform.gui.framework.smart</groupId>
